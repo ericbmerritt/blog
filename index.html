@@ -1,0 +1,24 @@
+---
+layout: default
+title: Right Brain Meme Pie (Eric B Merritt's Blog)
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h1>Interviews, Talks, Etc</h1>
+  <ul class="posts">
+    <li><span>July 17 2012</span> &raquo; <a href="http://www.meetup.com/erlang/events/71967772/">Sinan and Beyond with Eric Merritt</a></li>
+  </ul>
+
+  <h1>Prominent Open Source Projects</h1>
+  <ul class="posts">
+    <li><a href="https://github.com/erlware/joxa">Joxa:</a> A modern Lisp for the Erlang VM</li>
+    <li><a href="https://github.com/ericbmerritt/sinan">Sinan:</a> A powerful build system for Erlang</li>
+  </ul>
+</div>
