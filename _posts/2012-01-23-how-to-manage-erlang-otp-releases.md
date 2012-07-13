@@ -1,5 +1,10 @@
-How To Manage Erlang/OTP Releases
-=================================
+---
+layout: post
+title: How To Manage Erlang/OTP Releases
+---
+
+{{ page.title }}
+================
 
 It took me quite a few years to arrive at an
 optimal mental model for thinking about the Erlang, ERTS and releases

@@ -1,5 +1,10 @@
-Enhancing Lisp Flavored Erlang
-==============================
+---
+layout: post
+title: Enhancing Lisp Flavored Erlang
+---
+
+{{ page.title }}
+================
 
 I have a serious personal investment in Erlang as a language and a
 platform. I have written a book on the subject and spent a fair amount

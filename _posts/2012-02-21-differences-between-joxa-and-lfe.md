@@ -1,5 +1,10 @@
-Differences Between Joxa and LFE
-================================
+---
+layout: post
+title: Differences Between Joxa and LFE
+---
+
+{{ page.title }}
+================
 
 In the last few days I have gotten the question 'What are the
 differences between LFE and Joxa?' quiet a few times. So instead of

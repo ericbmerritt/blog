@@ -1,5 +1,10 @@
-Commit Hygiene and Git
-======================
+---
+layout: post
+title: Commit Hygiene and Git
+---
+
+{{ page.title }}
+================
 
 I have a very strong standard for commits when it comes to git. In
 general, commits should contain one unit of change and one unit of

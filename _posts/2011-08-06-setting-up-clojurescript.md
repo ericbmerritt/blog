@@ -1,5 +1,10 @@
-Setting Up ClojureScript
-========================
+---
+layout: post
+title: Setting Up ClojureScript
+---
+
+{{ page.title }}
+================
 
 Setting up Clojurescript is fully described over at the
 [Clojurescript Quick Start](https://github.com/clojure/clojurescript/wiki/Quick-Start). What

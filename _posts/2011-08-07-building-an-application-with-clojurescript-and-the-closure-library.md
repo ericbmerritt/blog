@@ -1,5 +1,10 @@
-Building an Application with ClojureScript and the Closure Library
-==================================================================
+---
+layout: post
+title: Building an Application with ClojureScript and the Closure Library
+---
+
+{{ page.title }}
+================
 
 *Note:* This was taken whole cloth from the
  [Google Closure Tutorial](http://code.google.com/closure/library/docs/tutorial.html)

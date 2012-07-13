@@ -1,5 +1,10 @@
-Team Development with Git
-=========================
+---
+layout: post
+title: Team Development with Git
+---
+
+{{ page.title }}
+================
 
 The process of collaboration and development on a project is
 important. The means by which you get that code into a deliverable
