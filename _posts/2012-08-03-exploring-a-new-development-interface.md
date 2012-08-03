@@ -8,13 +8,25 @@ title: Exploring A New Development Interface
 
 Very recently and after much experimentation I fundamentally changed
 the tools I use to do development. This is the first time I have made
-a change like this since I started coding in the mid 90s. Where before
-I used a pretty standard keyboard (IBM Model 2), a mouse (Kensington
-Expert Mouse), and a laptop (Usually running Linux, sometimes Mac OS
-X); Now I use a Chording keyboard
-([HandyKey Twiddler2](http://handykey.com) and an Android based tablet
-(Zareason Zatab). So far this non-traditional setup is working rather
-well and has made me much more mobile. Here is how I happened upon it.
+a change like this since I started coding in the mid 90s.
+
+### Previous Setup
+
+* Standard keyboard
+  ([IBM Model 2](http://en.wikipedia.org/wiki/Model_M_keyboard) in the
+  office, laptop keyboard in the cafe)
+* A mouse (Kensington Expert Mouse in the office, eraser head pointer
+  thingy on the thinkpad)
+* A laptop (Usually running Linux, sometimes Mac OS X)
+
+### New (Ultra-portable) Setup
+
+* Chording keyboard ([HandyKey Twiddler2](http://handykey.com)
+* Android based tablet
+([Zareason Zatab](http://zareason.com/shop/zatab.html).
+
+So far this non-traditional setup is working rather well and has made
+me much more mobile. Here is how I happened upon it.
 
 
 I Begin My a Journey
