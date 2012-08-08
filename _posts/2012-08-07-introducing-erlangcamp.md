@@ -6,7 +6,7 @@ title: Introducing ErlangCamp
 {{ page.title }}
 ================
 
-Every year Martin Logan, Jordan Wilson and myself put on conference
+Every year Martin Logan, Jordan Wilberding and myself put on conference
 called [ErlangCamp](http://erlangcamp.com). We have done it for three
 years so far; Chicago in 2010, Boston in 2011 and now A Coruña, Spain
 People come from all over the world to spend two days talking about
