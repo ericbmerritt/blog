@@ -27,33 +27,36 @@ are using them in ways that will cause them problems in the long
 run. Its common to have a 'Global' PLT file, either shipped with the
 Erlang distribution or in the users home directory. Using Global PLT
 files is a lot like using global state in your code. Its a practice
-that leads to subtle and hard to debug errors. Why is that? Well it
-has a lot to do with the fact that in the post Rebar world version
-numbers don't actually mean what they should they should.  Huh, what
-does that have to do with Dialyzer? Give me a second and I will
-explain. A lot of folks out there have the dependencies in their
-`rebar.config` pointing to a branch or other mutable `ref` instead of
-a tag. This means that every time they do a `rebar get-deps` and pull
-down their deps (maybe after a clean) they have slightly different
-code under the same version number. That is, the version number is
-specified in the *.app or the *.app.src and that doesn't change but
-with ever new commit the *code* associated with that version number
-changes. That pretty much eliminates the value of version numbers as
-useful identifiers. Unfortunately, Dialyzer and several other OTP
-tools rely on those version numbers. So lets take the case where you
-have a Global PLT file where you keep the cached information about OTP
-Applications. Internally, this file is organized by application and
-version. However, every single one of projects you are currently
-working on you work on (if you are depending on branches or head
-instead tags) are working on subtly different implicit versions for
-each dependency, all identified by an invalid explicit version that
-Dialyzer is using. You may go a long time without this causing you
-problems, but at some point Dialyzer is going to think your code is
-wrong based on what it knows about an App but that App is different
-from the one you have as a dependency and so the warning is
-invalid. You wont know that though and you will spend a ton of time
-trying to figure out what is wrong and eventually give up and ignore
-the warning in your mind or maybe even stop using Dialyzer.
+that leads to subtle and hard to debug errors.
+
+Why is that? Well it has a lot to do with the fact that in the post
+Rebar world version numbers don't actually mean what they should they
+should. Huh? what does that have to do with Dialyzer? Give me a
+second and I will explain. A lot of folks out there have the
+dependencies in their `rebar.config` pointing to a branch or other
+mutable `ref` instead of a tag. This means that every time they do a
+`rebar get-deps` and pull down their deps (maybe after a clean) they
+have slightly different code under the same version number. That is,
+the version number is specified in the `*.app` or the `*.app.src` and that
+doesn't change but with every new commit the *code* associated with
+that version number changes. That pretty much eliminates the value of
+version numbers as useful identifiers. Unfortunately, Dialyzer and
+several other OTP tools rely on those version numbers. So lets take
+the case where you have a Global PLT file where you keep the cached
+information about OTP Applications. Internally, this file is organized
+by application and version. However, every single one of projects you
+are currently working on you work on (if you are depending on branches
+or head instead tags) are working on subtly different implicit
+versions for each dependency, all identified by an invalid explicit
+version that Dialyzer is using.
+
+You may go a long time without this causing you problems, but at some
+point Dialyzer is going to think your code is wrong based on what it
+knows about an App but that App is different from the one you have as
+a dependency and so the warning is invalid. You wont know that though
+and you will spend a ton of time trying to figure out what is wrong
+and eventually give up and ignore the warning in your mind or maybe
+even stop using Dialyzer.
 
 Fixing The Problem
 ------------------
