@@ -19,15 +19,16 @@ How to Publish Code - The Model
 1. There is a single repository that serves as the Canonical
    Repository, the main store of code that will be delivered. This
    should always be the one under your Organization account.
-2. Each Developer has a Fork of this repository that they use for
-   development. This is where they push their work on a daily
-   basis. It is also the point of collaboration with other Developers
-   when working on a single user story.
+2. Each Developer has a
+   [Fork](https://help.github.com/articles/fork-a-repo) of this
+   repository that they use for development. This is where they push
+   their work on a daily basis. It is also the point of collaboration
+   with other Developers when working on a single user story.
 3. When code is complete the Developer organizes his code into a
    presentable, consumable form and creates a
    [Pull Request](https://help.github.com/articles/using-pull-requests)
    against Canonical. If multiple Developers are involved in
-   a single User Store one of the Developers pulls all the related
+   a single User Story, one of the Developers pulls all the related
    code into a single branch and creates the pull request.
 4. Another team member accepts the pull request, assigns it to
    himself, then reviews, compiles and tests the code related to that
@@ -39,13 +40,15 @@ How to Publish Code - The Model
    acceptable. The reviewer merges the Pull Request with
    Canonical.
 
-#### The Canonical Repository
+The Canonical Repository
+------------------------
 
 The Canonical Repository is the repository we deliver code from, it
 serves as the central reference point, the tip of development for the
-project. No one pushes Work In Progress (WIP) code to this repository
-and no single person owns it. It exists to hold the history of the
-project that is that is currently under development and the point of
+project. Being the point of global collaboration it is sacrosanct. No
+one pushes Work In Progress (WIP) code to this repository and no
+single person owns it. It exists to hold the history of the project
+that is that is currently under development and be the point of
 coordination for accepted code in the team.
 
 There is a bit of a mind hack going on here that I encourage you keep
@@ -58,7 +61,8 @@ encourage both the Developer and the code reviewer to take their job
 seriously without forcing a lot of process onto them. That lack of
 strict painful process is what makes this approach so powerful.
 
-#### The Developer's Repositories
+The Developer's Repositories
+---------------------------
 
 Developers work in Forks of the Canonical Repository. They create
 branches, work on experimental changes, code to meet User Story
@@ -93,22 +97,26 @@ canonical.
 How Code Gets Into Canonical
 ----------------------------
 
-We don't impose tools, or process on Developers in their own
-repo. They can code using any process they would like, using any
-editor, compiler, platform etc. It doesn't matter in the least as long
-as the *output* meets the team's standards. Code that exists in the
-Developer's repo is simple potential it doesn't matter until it is
-resolved by creating a Pull Request. It has no impact on the world (ie
-the project/team/organization) until the Developer feels that it is
-ready, until he explicitly converts it from Potential to Realized via
-a Pull Request.
+We don't impose tools or process on Developers in their own repo. They
+can code using any process they would like, using any editor,
+compiler, platform etc. It doesn't matter in the least as long as the
+*output* meets the team's standards. Code that exists in the
+Developer's repo is simply potential. That is, it doesn't matter until
+it is resolved i by creating a Pull Request. It has no impact on the
+world (ie the project/team/organization) until the Developer feels
+that it is ready, until he explicitly converts it from Potential to
+Realized via a Pull Request. Think of the Developer's repository like
+Schrödinger's box and the code like Schrödinger's cat. No one should
+know or care what state the code is in until the Developer open's the
+box by creating a pull request.
 
-Realizing potential code. There are always two parties to the
+In realizing potential code, There are always two parties to the
 process. The Developer or Developers producing the code and the
 Developer that's going to review/validate that code. Lets get started
 with the Developer's side.
 
-#### The Developer's Responsibility
+The Developer's Responsibility
+------------------------------
 
 The Developer puts the completed code onto a dedicated branch in his
 repository and refactors that to meet the standards of the project. He
@@ -126,15 +134,14 @@ should ensure that the following invariants hold.
   invariant).
 
 Once the Developer creates a Pull Request, a team mate is selected to
-do the review. There are a ton of ways to select a reviewer to handle
-shepherding the code into canonical. In my experience the best way to
-do it is just let the code reviewer self select. As long is its not
-always the same person stepping up things should be fine. If you have
-put together a good mature team this approach is, by far, the best.You
-could also just to randomly assign a team mate, have the Developer
-producing the code to pick the team mate that is going to review. In
-the end how the Reviewer is selected matters a lot less then the fact
-that you have a reviewer.
+do the review. There are a ton of ways to select a reviewer. In my
+experience the best way to do it is just let the code reviewer self
+select. As long is its not always the same person stepping up things
+should be fine. If you have put together a good mature team this
+approach is, by far, the best.You could also just to randomly assign a
+team mate, have the Developer producing the code to pick the team mate
+that is going to review. In the end how the Reviewer is selected
+matters a lot less then the fact that you have a reviewer.
 
 The final responsibility of the Developer is to make sure make sure
 the code gets reviewed. The longer code sits out without review the
@@ -146,7 +153,8 @@ him to respond quickly to comments from his reviewer or it may require
 him to go stand over his reviewers shoulder while the reviewer is
 doing the Pull Request. It depends on where the problem lies.
 
-#### The Reviewer Responsibility
+The Reviewer Responsibility
+---------------------------
 
 The Reviewer's job is to review the Pull Request to validate that it meets
 the project standard. This comprises a few things.
@@ -173,7 +181,8 @@ code pass.
 When the change is reviewed and accepted the reviewer signs merges the
 Pull Request.
 
-#### Once The Change is in Canonical
+Once The Change is in Canonical
+-------------------------------
 
 Once the code is in Canonical and out of the Developer's repository,
 history revision, commit amends and the like should all stop. At that
