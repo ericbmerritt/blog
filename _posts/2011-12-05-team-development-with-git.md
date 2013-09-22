@@ -8,26 +8,13 @@ title: Team Development with Git
 
 The process of collaboration and development on a project is
 important. The means by which you get that code into a deliverable
-state matters and matters a lot. Now the method of delivery and what
+state matters and matters a lot. While method of delivery and what
 constitutes a deliverable state changes from company to company, team
-to team and even project to project but there is always a point at
-which you want 'make something available'.
-
-The process you use to get to that point should involve a good balance
-of time to market and quality. While you don't want to make the code
-so perfect that you never deliver it or you deliver it so late that it
-ceases to matter, you also do not want to deliver code that is so poor
-and has such high maintenance costs that it doesn't actually solve
-the problem its designed to solve. You must strike a balance between
-the two and using good git principles along with a little bit of sound
-basic engineering practices you can get there. With that in mind, I am
-going to discuss my preferred team development model with
-[Git](http://git-scm.com), along with a few additional changes if you are
-using [Github](http://www.github.com).
+to team and even project to project, there is always a point at which
+you want 'make something available'.
 
 The Model
 ---------
-
 
 1. There is a single repository that serves as the Canonical
    Repository (the main store of code that will be delivered).
@@ -49,13 +36,13 @@ The Canonical Repository is the repository we deliver code from, it
 serves as the central reference point, the tip of development for the
 project. No one pushes Work In Progress (WIP) code to this repository
 and no single person owns it. It exists to hold the history of the
-'thing' that is currently in production or that will be in production
-and it is the point that Developers rebase their work in process code
-on.
+product that is currently in production or that will be in production
+and it is the point that Developers rebase their work in while
+developing their code.
 
-There is a bit of a mind hacks going on here that I encourage you keep
+There is a bit of a mind hack going on here that I encourage you keep
 intact. That is the 'sacredness' of canonical. It should never become
-something that a developer pushes too has part of his daily
+something that a developer pushes too as part of his daily
 workflow. It should always carry the sense that things that go into it
 are important. In my experience this vastly reduces the screw-ups,
 bugs, bad pushes etc that can be so painful to a team. It also helps
@@ -80,8 +67,8 @@ directly. It removes an unnecessary step from the process and makes it
 that much easier and less error prone.
 
 There is a second big mind hack going on here. That is the fact that
-nothing in the developers repo matters until the developer says it
-matters. We want the developer to be productive, we want him to use
+nothing in the developers repo matters at all until the developer says
+it matters. We want the developer to be productive, we want him to use
 the tools that work for him and the process that is most comfortable
 for him use to produce code. It doesn't matter if the rest of the team
 uses emacs and he uses vim, it doesn't matter if he wants to use OSX
@@ -125,11 +112,10 @@ should ensure that the following invariants hold.
 
 * The commits are small, self contained and well named. If you have
   not already take a quick look at my previous posting on
-  [Git Commit Hygiene](http://ericbmerritt.posterous.com/71583289).
-* The code follows the coding conventions of the project (these should be
-  lightweight and non-intrusive).
+  [Git Commit Hygiene](http://blog.ericbmerritt.com/2011/09/21/commit-hygiene-and-git.html).
+* The code follows the coding conventions of the project.
 * That the code is good, in the eyes of the code reviewer. Functions
-  are not to long, modules are focused, etc. Basically, that the code
+  are not too long, modules are focused, etc. Basically, that the code
   follows normal practice for producing good code.
 * The code compiles on the target platform.
 * All the tests in the system pass. (This should be a project
@@ -176,14 +162,14 @@ the project standard. This comprises a few things.
 
 If any of these steps fail the Reviewer pushes back on the original
 Developer to make changes and finish the work. This may take several
-iterations depending on the quality of the Developer writing the
-code. *That is completely fine*. This is normal development, we are
-engineers not code monkeys and we want to get the code as right as
-reasonably can. The above steps are the *minimal* steps that need to
-be done ensure this standard. Sub-par code should never make it into
-Canonical simply because the developer is annoyed with the process or
-the or timelines are tight. You invariably pay more in the long run by
-giving in to these pressures then you gain in the short run.
+iterations. *That is completely fine*. This is normal development, we
+are engineers and we want to the code to be as well engineered and
+maintainable as possible. The above steps are the *minimal* steps that
+need to be done ensure this standard. Sub-par code should never make
+it into Canonical simply because the developer is annoyed with the
+process or the or timelines are tight. You invariably pay more in the
+long run by giving in to these pressures then you gain in the short
+run.
 
 Once the change is reviewed and accepted the reviewer signs off on the
 code. Yes, we expect the Reviewer to put his name on it and take
@@ -212,8 +198,8 @@ This process is actually very smooth, but it does assumes a few things:
 
 If these things are true then you are golden. It may take a little bit
 of time to get a feel for the process and work around the little
-hiccups that will inevitably occur. However, with competent engineers
-the process should be flowing smoothly after a few weeks.
+hiccups that will inevitably occur. However, the process should be
+flowing smoothly after a few weeks.
 
 Things to Watch Out For
 -----------------------
@@ -248,10 +234,7 @@ its nature, not be rigid.
 Go ahead, bite the bullet and give the team the time and resources
 they need to learn git well. It will take a few weeks and you will
 take a productivity hit. However, in the long run you will make that
-back many times over. If you have team members that either do not, can
-not, or will not pick up git for whatever reason. Well maybe its time
-to consider those folks as bad hires and let them go. The team will be
-better off for it in the long run.
+back many times over.
 
 The other big thing to watch out for is the urge to bypass the
 process. Sometimes when you are in a tight situation it can be
