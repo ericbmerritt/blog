@@ -1,5 +1,4 @@
 ---
-layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -11,7 +10,7 @@ layout: nil
  <id>http://blog.ericbmerritt.com/</id>
  <author>
    <name>Eric Merritt</name>
-   <email>ericbmerritt@gmail.com</email>
+   <email>eric@merritt.tech</email>
  </author>
 
  {% for post in site.posts %}

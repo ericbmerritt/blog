@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deal of the Day April 16: Erlang and OTP in Action
+title: Deal of the Day April 16 - Erlang and OTP in Action
 ---
 
 {{ page.title }}

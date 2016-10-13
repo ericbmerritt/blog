@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Released: Ktuo 0.1.1
+title: Released - Ktuo 0.1.1
 date: 2007-01-19
 comments: false
 ---
