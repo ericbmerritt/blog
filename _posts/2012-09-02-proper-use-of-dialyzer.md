@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Proper Use of Dialyzer Rebar Projects
+title: The Proper Use of Dialyzer in Rebar Projects
 ---
 
 {{ page.title }}
