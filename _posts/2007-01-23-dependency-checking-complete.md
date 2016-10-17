@@ -3,16 +3,14 @@ layout: post
 title: Dependency Checking Complete!!
 date: 2007-01-23
 comments: false
+tags: [erlang,sinan,build]
 ---
 
-{{ page.title }}
-================
-
 I finally finished up both the shallow and the deep dependency
-resolution for sinan. This took a bit of time and effort to
+resolution for Sinan. This took a bit of time and effort to
 conceptualize, abstract and implement.
 
-Now given a list of apps and the dependencies (along with the url(s)
+Now given a list of apps and the dependencies (along with the URL(s)
 of the repo); like this
 
      [{app1, "0.1", [{edoc, 'LATEST'},
@@ -34,8 +32,8 @@ project; like this
         [app1]},
      {app1,"0.1",[]}]
 
-If it runs into a version conflict it reports what the conflict is and
-what applications are causing it.
+If it runs into a version conflict, it reports the conflict and
+the applications are causing the problem.
 
-In the output above. Each entry is a dependency, its version and a
-list of apps the depend on that app.
+In the output above. Each entry is a dependency, its version, and a
+list of apps that depend on that app.

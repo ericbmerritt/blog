@@ -3,16 +3,13 @@ layout: post
 title: Config Refactoring Complete!
 date: 2007-01-15
 comments: false
+tags: [erlang,config]
 ---
 
-{{ page.title }}
-================
+I just finished refactoring the config support in Sinan using the new
+Ktuo package. It works well and makes the config much more readable.
 
-I just finished refactoring the config support in sinan using the new
-ktuo package. It works really well and makes the config much more
-readable.
-
-Original config with erlang terms
+Original config with Erlang terms
 
     [{repositories, ["http://repo.metadrift.net/repo"]},
       {build_dir, "_build"},
@@ -31,7 +28,6 @@ Original config with erlang terms
        {handler, sin_tar}]}]}].
 
 new, more readable, config
-
 
     repositories : ["http://repo.metadrift.net/repo"],
     build_dir : _build,
@@ -60,5 +56,5 @@ new, more readable, config
       }
     }
 
-Well, I think its more readable and more maintainable with the nested
-namespaces.
+Well, I think it is more readable and more maintainable with the
+nested namespaces.

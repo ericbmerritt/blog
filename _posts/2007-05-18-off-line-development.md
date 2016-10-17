@@ -3,17 +3,15 @@ layout: post
 title: Off Line Development
 date: 2007-05-18
 comments: false
+tags: [erlang,sinan,progress,build]
 ---
-
-{{ page.title }}
-================
 
 After numerous requests I have finally implemented off-line
 development. You no longer have to be connected to build your
 projects. In the past the dependency analysis task ran every build and
 if it thought that there was a chance that the dependencies had
 changed it connected to the repository to check the dependencies. This
-no longer happens. There is now a check\_depends task that checks to
+no longer happens. There is now a `check_depends` task that checks to
 make sure that dependencies have been run at some time in the past. It
 then checks if the dependencies need to be updated. If the
 dependencies do need to be updated it asks the user if he wants to

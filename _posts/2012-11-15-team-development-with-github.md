@@ -1,17 +1,19 @@
 ---
 layout: post
 title: Team Development with Github
+tags: [philosophy,'development-process']
 ---
 
-{{ page.title }}
-================
+This article is an update and refinement of my 'Team Development with
+Git' of last year. It changes the model to take into account the
+strengths and weaknesses of Github's PR process.
 
 The process of collaboration and development on a project is
 important. The means by which you get your code into a deliverable
 state matters and matters a lot. While the method of delivery and what
 constitutes a deliverable state changes from company to company, team
 to team and even project to project but there is always a point at
-which you want 'make something available' ie, publishing
+which you want 'make something available, ' i.e., publishing
 
 How to Publish Code - The Model
 -------------------------------
@@ -24,16 +26,16 @@ How to Publish Code - The Model
    repository that they use for development. This is where they push
    their work on a daily basis. It is also the point of collaboration
    with other Developers when working on a single user story.
-3. When code is complete the Developer organizes his code into a
+3. When code is complete, the Developer organizes his code into a
    presentable, consumable form and creates a
    [Pull Request](https://help.github.com/articles/using-pull-requests)
    against Canonical. If multiple Developers are involved in
    a single User Story, one of the Developers pulls all the related
    code into a single branch and creates the pull request.
 4. Another team member accepts the pull request, assigns it to
-   himself, then reviews, compiles and tests the code related to that
+   himself, then reviews, compiles, and tests the code related to that
    pull request.
-5. If any stage of the review fails then the reviewer lets the
+5. If any stage of the review fails, then the reviewer lets the
    original Developer know in the pull request comments and waits
    until the Developer address the changes.
 6. When the reviewer and Developer have agreed that the code is
@@ -45,18 +47,18 @@ The Canonical Repository
 
 The Canonical Repository is the repository we deliver code from, it
 serves as the central reference point, the tip of development for the
-project. Being the point of global collaboration it is sacrosanct. No
-one pushes Work In Progress (WIP) code to this repository and no
+project. Being the point of global collaboration, it is sacrosanct. No
+one pushes Work In Progress (WIP) code to this repository, and no
 single person owns it. It exists to hold the history of the project
 that is that is currently under development and be the point of
 coordination for accepted code in the team.
 
-There is a bit of a mind hack going on here that I encourage you keep
+There is a bit of a mind hack going on here that I encourage you to keep
 intact. That is the 'sacredness' of canonical. It should never become
 something that a Developer pushes too as part of his daily
 workflow. It should always carry the sense that things that go into it
-are important. In my experience this vastly reduces the screw-ups,
-bugs, bad pushes etc that can be so painful to a team. It also helps
+are important. In my experience, this vastly reduces the screw-ups,
+bugs, bad pushes, etc. that can be so painful to a team. It also helps
 encourage both the Developer and the code reviewer to take their job
 seriously without forcing a lot of process onto them. That lack of
 strict painful process is what makes this approach so powerful.
@@ -72,9 +74,9 @@ other Developers that they are working on a User Story with. This type
 of Code sharing (during the development process) should happen via
 direct pulling from the forks of their peers. That is, Developers
 wanting to use code from a peer should use `git fetch` or `git pull`
-to gather the code they are interested in using from their peers
+to gather the code, they are interested in using, from their peer's
 forks. They shouldn't use Pull Requests. Pull Requests are a 'heavy
-weight' construct that should really only be used to get code into
+weight' construct that should only be used to get code into
 canonical.
 
 There is a second big mind hack going on here. That is the fact that
@@ -82,10 +84,10 @@ nothing in the Developer repo matters until the Developer says it
 matters by creating a pull request. We want the Developer to be
 productive, we want him to use the tools that work for him and the
 process that is most comfortable for him. So we place no restrictions
-on how he edits, manages and commits code in his own repository. The
-only thing that matters is that the code submits for inclusion in
-canonical via a Pull Request meets the standards the team has set,
-through peer reviews, automated test suites and the like.
+on how he edits, manages and commits code in his repository. The only
+thing that matters is that the code submits for inclusion in canonical
+via a Pull Request meets the standards the team has set, through peer
+reviews, automated test suites and the like.
 
 We want him to explore freely. We want him to be the most productive
 that he can be using the tools that he is comfortable with. We don't
@@ -97,14 +99,14 @@ canonical.
 How Code Gets Into Canonical
 ----------------------------
 
-We don't impose tools or process on Developers in their own repo. They
+We don't impose tools or process on Developers in their repo. They
 can code using any process they would like, using any editor,
-compiler, platform etc. It doesn't matter in the least as long as the
+compiler, platform, etc. It doesn't matter in the least as long as the
 *output* meets the team's standards. Code that exists in the
 Developer's repo is simply potential. That is, it doesn't matter until
-it is resolved i by creating a Pull Request. It has no impact on the
-world (ie the project/team/organization) until the Developer feels
-that it is ready, until he explicitly converts it from Potential to
+it is resolved by creating a Pull Request. It has no impact on the
+world (i.e., the project/team/organization) until the Developer feels
+that it is ready until he explicitly converts it from Potential to
 Realized via a Pull Request. Think of the Developer's repository like
 Schrödinger's box and the code like Schrödinger's cat. No one should
 know or care what state the code is in until the Developer open's the
@@ -112,7 +114,7 @@ box by creating a pull request.
 
 In realizing potential code, There are always two parties to the
 process. The Developer or Developers producing the code and the
-Developer that's going to review/validate that code. Lets get started
+Developer that's going to review/validate that code. Let's get started
 with the Developer's side.
 
 The Developer's Responsibility
@@ -127,30 +129,30 @@ should ensure that the following invariants hold.
   [Git Commit Hygiene](http://blog.ericbmerritt.com/2011/09/21/commit-hygiene-and-git.html).
 * The code follows the coding conventions of the project.
 * That the code is good, in the eyes of the code reviewer. Functions
-  are not too long, modules are focused, etc. Basically, that the code
+  are not too long, modules are focused, etc. That the code
   follows normal practice for producing good well engineered code.
 * The code compiles on the target platform without warnings.
 * All the tests in the system pass. (This should be a project
   invariant).
 
-Once the Developer creates a Pull Request, a team mate is selected to
+Once the Developer creates a Pull Request, a teammate is selected to
 do the review. There are a ton of ways to select a reviewer. In my
-experience the best way to do it is just let the code reviewer self
+experience, the best way to do it is just let the code reviewer self
 select. As long is its not always the same person stepping up things
-should be fine. If you have put together a good mature team this
+should be fine. If you have put together a good mature team, this
 approach is, by far, the best.You could also just to randomly assign a
-team mate, have the Developer producing the code to pick the team mate
+teammate, have the Developer producing the code to pick the teammate
 that is going to review. In the end how the Reviewer is selected
-matters a lot less then the fact that you have a reviewer.
+matters a lot less than the fact that you have a reviewer.
 
 The final responsibility of the Developer is to make sure make sure
-the code gets reviewed. The longer code sits out without review the
+the code gets reviewed. The longer code sits out without review, the
 more likely it is that bit rot will occur, that merging into the
 Canonical branch will become painful etc. So the Developer needs to do
 what is necessary to make sure that code does not sit out in a Pull
-Request for more then a few days without any action. This may require
-him to respond quickly to comments from his reviewer or it may require
-him to go stand over his reviewers shoulder while the reviewer is
+Request for more than a few days without any action. This may require
+him to respond quickly to comments from his reviewer, or it may require
+him to stand over his reviewer's shoulder while the reviewer is
 doing the Pull Request. It depends on where the problem lies.
 
 The Reviewer Responsibility
@@ -164,13 +166,13 @@ the project standard. This comprises a few things.
 * Make sure that the Developer's changes rebase or merge cleanly with
   the Canonical branch that is being targeted.
 * Make sure that the code compiles cleanly without warnings and all
-  related tests pass (this should actually be done by an automated
+  related tests pass (this should be done by an automated
   tool).
 
 If any of these steps fail the Reviewer should push back on the
-original Developer to make fix the code. This may take several
-iterations. *That is completely fine*. This is normal development, we
-are Engineers and we want to create a well engineered, maintainable
+original Developer to fix the code. This may take several
+iterations. *That is completely fine*. This is normal development; we
+are Engineers, and we want to create a well engineered, maintainable
 product. The above steps are the *minimal* steps that need to be done
 ensure this standard. Sub-par code should never make it into Canonical
 simply because the Developer is annoyed with the process or the or
@@ -194,13 +196,13 @@ process previously outlined above.
 Wrapping Up
 -----------
 
-This process is actually very smooth, but it does assumes a few things:
+This process is very smooth, but it does assume a few things:
 
 * You have decided to adopt the process as a team.
 * You have some automated testing.
 * You have some standards for the codebase that should be applied.
 
-If these things are true then you are golden. It may take a little bit
+If these things are true, then you are golden. It may take a little bit
 of time to get a feel for the process and work around the little
 hiccups that will inevitably occur. However, the process should be
 flowing smoothly after a few weeks.
@@ -209,23 +211,23 @@ Things to Watch Out For
 -----------------------
 
 This is not intended to be a rigid process. The only place that real
-process actually comes into play in the transition from the
+process comes into play in the transition from the
 Developer's repository to the Canonical repository. This is true by
 design. Its purpose is to encourage the wild and wooly exchange and
-growth of ideas, creativity and productivity in the project wherever
-that is possible while still providing a enough rigidity and
+growth of ideas, creativity, and productivity in the project wherever
+that is possible while still providing enough rigidity and
 discipline where it is required. Getting that balance right means that
 you get the most creativity and productivity possible from your
 Developers and the most maintainable, well engineered code possible
-while at the same time keep the team happy. This is what this process
+while at the same time keeping the team happy. This is what this process
 seeks to encourage.
 
 The big thing to watch out for is the urge to bypass the
-process. Sometimes when you are in a tight situation it can be
+process. Sometimes when you are in a tight situation, it can be
 tempting to want to push code directly to Canonical, bypassing the
-review. For example, you might have a bug in production, lets say your
-system is down and its costing the company a million dollars a
-minute. Pressure is high and you may have a huge urge to tell the devs
+review. For example, you might have a bug in production; let's say your
+system is down and it's costing the company a million dollars a
+minute. Pressure is high, and you may have a huge urge to tell the devs
 (or yourself if you are the dev) that the process would only slow you
 down and the code needs to get out *right now*. This is almost
 invariably a bad decision. This process should only take a few minutes
