@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Sinan Build System
 date: 2007-01-10

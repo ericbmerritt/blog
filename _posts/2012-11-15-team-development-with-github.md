@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Team Development with Github
 tags: [philosophy,'development-process']

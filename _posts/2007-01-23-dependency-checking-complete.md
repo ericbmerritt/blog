@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Dependency Checking Complete!!
 date: 2007-01-23

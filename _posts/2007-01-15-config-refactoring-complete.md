@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Config Refactoring Complete!
 date: 2007-01-15

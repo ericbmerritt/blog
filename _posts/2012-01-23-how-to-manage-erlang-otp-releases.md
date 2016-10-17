@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: How To Manage Erlang/OTP Releases
 tags: [erlang,release]

@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Differences Between Joxa and LFE
 tags: [erlang,joxa,lfe]

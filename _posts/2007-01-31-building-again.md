@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Building Again!
 date: 2007-01-31

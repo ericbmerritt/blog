@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Erlware Progress Update
 date: 2007-12-19

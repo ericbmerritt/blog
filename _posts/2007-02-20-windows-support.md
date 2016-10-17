@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Windows Support
 date: 2007-02-20

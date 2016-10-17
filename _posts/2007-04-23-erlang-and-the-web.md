@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Erlang and the Web
 date: 2007-04-23

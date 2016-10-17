@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Busy Times
 date: 2007-03-31

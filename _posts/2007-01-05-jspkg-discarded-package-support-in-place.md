@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: JsPkg Discarded, Package Support in Place
 date: 2007-01-05

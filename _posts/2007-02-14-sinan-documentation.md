@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Sinan Documentation
 date: 2007-02-14

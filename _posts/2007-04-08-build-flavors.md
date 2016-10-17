@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Build Flavors
 date: 2007-04-08

@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Ktuo Error Reporting
 date: 2007-01-11

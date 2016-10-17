@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Setting Up ClojureScript
 tags: [web,clojurescript]

@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: An Overview of Concurrency
 date: 2008-05-21

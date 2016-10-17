@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Open Beta for Sinan
 date: 2007-02-28

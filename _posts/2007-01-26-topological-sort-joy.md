@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Topological Sort Joy
 date: 2007-01-26

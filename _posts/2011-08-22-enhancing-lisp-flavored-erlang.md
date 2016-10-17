@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Enhancing Lisp Flavored Erlang
 tags: [erlang,lfe]

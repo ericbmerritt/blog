@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Configurations
 date: 2007-03-12

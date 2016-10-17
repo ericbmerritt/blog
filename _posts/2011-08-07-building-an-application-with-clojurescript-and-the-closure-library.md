@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Building an Application with ClojureScript and the Closure Library
 tags: [clojurescript,clojure]

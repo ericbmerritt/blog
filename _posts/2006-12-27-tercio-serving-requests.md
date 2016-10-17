@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Tercio Serving Requests
 date: 2006-12-27

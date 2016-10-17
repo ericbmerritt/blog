@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: More Progress!
 date: 2007-01-31

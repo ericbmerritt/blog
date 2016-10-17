@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Distributed Bug Tracking
 date: 2007-05-02

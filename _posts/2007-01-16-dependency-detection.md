@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Dependency Detection
 date: 2007-01-16

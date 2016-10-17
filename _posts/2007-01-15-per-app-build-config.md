@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Per App Build Config
 date: 2007-01-15

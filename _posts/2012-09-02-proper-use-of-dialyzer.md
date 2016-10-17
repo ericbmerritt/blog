@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: The Proper Use of Dialyzer in Rebar Projects
 tags: [erlang,dialyzer]

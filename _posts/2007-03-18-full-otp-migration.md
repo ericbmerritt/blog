@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Full OTP Migration
 date: 2007-03-18

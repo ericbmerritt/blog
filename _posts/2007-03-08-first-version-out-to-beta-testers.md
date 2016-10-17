@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: First Version Out to Beta Testers!
 date: 2007-03-08

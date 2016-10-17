@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Sinan 0.8.4 Alpha is Out
 date: 2007-07-10

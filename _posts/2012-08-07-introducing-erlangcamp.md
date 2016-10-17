@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Introducing ErlangCamp
 tags: [erlang,training,conference]

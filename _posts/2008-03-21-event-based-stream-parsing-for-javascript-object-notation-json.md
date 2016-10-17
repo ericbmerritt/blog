@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Event Based Stream Parsing for JavaScript Object Notation (JSON)
 date: 2008-03-21

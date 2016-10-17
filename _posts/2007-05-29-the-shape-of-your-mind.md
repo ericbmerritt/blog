@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: The Shape Of Your Mind
 date: 2007-05-29

@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Erlware and the Git Development Model
 date: 2007-10-25

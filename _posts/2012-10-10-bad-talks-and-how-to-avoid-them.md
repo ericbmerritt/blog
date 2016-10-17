@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Bad Talks And How To Avoid Them
 tags: [philosophy,talks]

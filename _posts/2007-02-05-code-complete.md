@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Code Complete!
 date: 2007-02-05

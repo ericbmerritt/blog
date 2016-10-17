@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Into the Client
 date: 2007-01-01

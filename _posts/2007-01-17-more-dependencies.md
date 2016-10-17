@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: More Dependencies
 date: 2007-01-17

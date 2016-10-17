@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Exploring A New Development Interface
 tags: [philosophy,development]

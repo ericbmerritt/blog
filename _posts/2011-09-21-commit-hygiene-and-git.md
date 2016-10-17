@@ -1,4 +1,5 @@
 ---
+bg: 'apollo.png'
 layout: post
 title: Commit Hygiene and Git
 tags: [philosophy,git]
