@@ -1,2 +1,35 @@
-markdown: rdiscount
-highlighter: true
+# Welcome to Jekyll!
+# Site settings
+title: Launching Everything
+email: eric@merritt.tech
+description: >
+  I build projects, organizations, and companies from scratch with a
+  focus on the technology side of the business. It's a strange niche,
+  but one I am uniquely qualified for. Best of all, I love doing it.
+baseurl: "" # the subpath of your site, e.g. /blog
+lang: "en"
+url: "http://blog.ericbmerritt.tech" # the base hostname & protocol for your site
+twitter_username: ericbmerritt
+github_username:  ericbmerritt
+disqus_username:  ericbmerritt
+
+# Build settings
+markdown: kramdown
+relative_permalinks: false
+permalink: /:categories/:title/
+
+# Posts settings
+future: true
+safe: false
+lsi: false
+excerpt_separator: "\n\n"
+
+compress_html:
+  comments: ["<!-- ", " -->"]
+  clippings: all
+  endings: all
+
+sass:
+  sass_dir: assets/_sass
+
+images: '/assets/images'
