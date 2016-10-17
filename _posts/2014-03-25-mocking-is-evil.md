@@ -3,6 +3,7 @@ bg: 'apollo.png'
 layout: post
 title: Mocking is Evil
 tags: [philosophy,development]
+comments: true
 ---
 
 [Mocking](http://stackoverflow.com/questions/2665812/what-is-mocking)
