@@ -8,7 +8,7 @@ description: >
   but one I am uniquely qualified for. Best of all, I love doing it.
 baseurl: "" # the subpath of your site, e.g. /blog
 lang: "en"
-url: "http://blog.ericbmerritt.tech" # the base hostname & protocol for your site
+url: "http://www.ericbmerritt.com" # the base hostname & protocol for your site
 twitter_username: ericbmerritt
 github_username:  ericbmerritt
 disqus_username:  ericbmerritt
