@@ -16,7 +16,7 @@ disqus_username:  ericbmerritt
 # Build settings
 markdown: kramdown
 relative_permalinks: false
-permalink: /:categories/:title/
+permalink: /:categories/:year/:month/:day/:title.html
 
 # Posts settings
 future: true
