@@ -1,5 +1,5 @@
 ---
-bg: "eric.png   "
+bg: "headshot.jpg"
 layout: page
 title: "Resume"
 crawlertitle: "Eric Merritt's Resume"
@@ -15,7 +15,7 @@ active: resume
 
 ## Experience
 
-### 2015-Present - VP of Engineering, Stealth FinTech Startup, Bellevue, WA.
+### 2015-Present - CTO, Sunlight Payments, Inc., Bellevue, WA.
 
 I am in the process of kicking off a new, well funded, Fintech Startup
 in the Fraud Detection space. We have hired the team, designed the
