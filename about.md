@@ -3,7 +3,7 @@ bg: "movement.jpg"
 layout: page
 title: "About"
 permalink: /about/
-summary: "Why Launching Everything"
+summary: "Why Launching"
 active: about
 ---
 

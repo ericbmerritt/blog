@@ -37,9 +37,19 @@ Areas of Expertise:
 * Contract Negotiations
 
 ## PROFESSIONAL EXPERIENCE
+## Senior Director Product Software Engineering
+* 2018 – Present; Sinclair Broadcast Group., Seattle, WA
+
+• Released a major new Over the Top Television (appleTV,FireTV,etc)
+product on time for the first time in the group’s history.
+• Reduced employee turnover from 30% in the previous 6 months to 2% in
+the first year.
+• Doubled production delivery cadence by pushing autonomy and decision
+making into the individual contributor level, removing unnecessary
+process and bureaucracy overburden.
 
 ### Chief Technology Officer (CTO)
-*2015 - Present; SUNLIGHT PAYMENTS, INC., Bellevue, WA*
+*2015 - 2018; SUNLIGHT PAYMENTS, INC., Bellevue, WA*
 
 Lead technological functions for a Gates backed startup venture with a
 mandate to solve the problems facing NGOs in funding philanthropic
